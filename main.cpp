@@ -103,7 +103,10 @@ void update_Element(vector<vector<int>>& matrix, int row, int col, int newValue)
 }
 
 int main() {
-	fstream file("input.txt", ios::in);
+	string filename;
+	cout << "Enter the filename: ";
+	cin >> filename;
+	fstream file(filename, ios::in);
     
 	// Check if file opened successfully
 	if (!file.is_open()) {
